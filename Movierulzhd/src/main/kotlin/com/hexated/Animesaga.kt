@@ -1,4 +1,4 @@
-package com.hexated
+package com.aryanInvader
 
 import com.lagradost.cloudstream3.TvType
 import com.lagradost.cloudstream3.mainPageOf
