@@ -11,7 +11,7 @@ import org.jsoup.nodes.Element
 class PRMoviesProvider : MainAPI() {
 
     override var mainUrl = "https://prmovies.wine"
-    override var name = "PR"
+    override var name = "PRM."
     override val hasMainPage = true
     override var lang = "hi"
     override val hasQuickSearch = true
@@ -22,6 +22,7 @@ class PRMoviesProvider : MainAPI() {
     )
 
     override val mainPage = mainPageOf(
+        "$mainUrl/most-favorites/page/" to "latest",
         "$mainUrl/most-favorites/page/" to "Popular",
         "$mainUrl/director/netflix/page/" to "NetFlix",
         "$mainUrl/director/amazon-prime/page/" to "Amazon Prime",
